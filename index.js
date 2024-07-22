@@ -18,7 +18,7 @@ import { globalErrorHandler } from "./utils/errors/GlobalErrorHandler.js";
 const Configs = getConfigs();
 mongo_service();
 const app = express();
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
   res.send("working fineeeeeeeeee")
 })
 const server = http.createServer(app);
