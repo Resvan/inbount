@@ -6,7 +6,7 @@ let connect = () => {
   const options = {
     // useNewUrlParser: true
   };
-  mongoose.connect(Configs?.mongo?.url, options);
+  mongoose.connect('mongodb+srv://Resvan:watxKPUdpuVA931o@cluster0.j1gexs8.mongodb.net/inbound');
 
   mongoose.connection.on("connected", () => {
     console.log(`Connected to the MongoDB Database ${Configs?.server?.name} ${Configs?.server?.version}`);
